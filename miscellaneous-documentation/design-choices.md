@@ -20,5 +20,3 @@ any necessary tests, and their k8s.
 I think in a formal setting it'd probably be better to separate that out as a fifth,
 but given the scope of the project, it seemed easier to set up orchestration out of
 here.
-
-!!! Small feature change.
