@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS products (
                                         id SERIAL PRIMARY KEY,
                                         item VARCHAR(255) NOT NULL,
                                         quantity INTEGER NOT NULL,
-                                        price DECIMAL(10, 2) NOT NULL,
+                                        price DECIMAL(10, 2) NOT NULL
                                     );
 
 -- Create orders table
@@ -18,9 +18,10 @@ CREATE TABLE IF NOT EXISTS orders (
                                     );
 
 -- Insert sample products
-INSERT INTO products (name, price, description) VALUES
+INSERT INTO products (item, quantity, price) VALUES
                                                     ('Candyland', 30, 10.00),
                                                     ('Twister', 25, 14.00),
                                                     ('Easy Bake Oven', 15, 50.00),
                                                     ('Jumping Jacks', 50, 7.00),
-                                                    ('Little Green Army Men', 45, 10.00);
+                                                    ('Little Green Army Men', 45, 10.00),
+                                                    ('Neds Nose', 0, 30.00);
